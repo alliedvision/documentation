@@ -10,5 +10,4 @@ To change and optimize default settings of your board, visit the documentation w
 https://github.com/alliedvision/documentation/wiki
 ## Hardware user documentation
 To assemble the hardware and operate the camera, download instructions at: 
-
-https://www.alliedvision.com/en/support/technical-documentation/alvium-documentation.html
+https://www.alliedvision.com/en/support/technical-documentation/alvium-csi-2-documentation.html
