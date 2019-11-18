@@ -17,6 +17,9 @@ In that case, some tools or libraries such as qv4L2 do not display images correc
 Please see the list with supported and unsupported pixel formats:   
 https://www.alliedvision.com/fileadmin/content/documents/products/software/software/embedded/JetsonTX2-restrictions.PNG
 
+### Supported number of lanes
+Currently, the driver supports using 4 lanes.
+
 ### Special features, troubleshooting
 The V4L2 node provides some features that are no camera features, but features of the NVIDIA video input unit (VI).
 It is not recommended to change these features because the stream might fail or image data gets corrupted.
