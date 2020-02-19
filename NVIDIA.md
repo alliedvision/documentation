@@ -15,7 +15,7 @@ You can connect and operate two Alvium cameras with CSI-2 interface.
 If the camera sends an image width not divisible by 16, 32, or 64 (according to the current pixel format), there will be a padding at the end of each line.
 In that case, some tools or libraries such as qv4L2 do not display images correctly.
 Please see the list with supported and unsupported pixel formats:   
-https://www.alliedvision.com/fileadmin/content/images/Software/Jetson-restrictions.PNG
+https://www.alliedvision.com/fileadmin/content/images/Software/Jetson-restrictions.png
 
 ### Supported number of lanes
 Currently, the driver supports using 4 lanes.
