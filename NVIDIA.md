@@ -4,18 +4,19 @@
 Installation instructions are provided in the README of the driver repository:   
 https://github.com/alliedvision/linux_nvidia_jetson
 
-## Additional information
-
-### Support of two cameras
+## Support of two cameras
 You can connect and operate two Alvium cameras with CSI-2 interface.
 
-### Restrictions of certain image widths, dependent on camera sensor and pixel format
-* Alvium CSI-2 cameras with firmware version 0.1.0 don't support cropping of the width.
-* NVIDIA's video input has restrictions concerning the image width depending on the pixel format. 
-If the camera sends an image width not divisible by 16, 32, or 64 (according to the current pixel format), there will be a padding at the end of each line.
-In that case, some tools or libraries such as qv4L2 do not display images correctly.
-Please see the list with supported and unsupported pixel formats:   
-https://www.alliedvision.com/fileadmin/content/images/Software/Jetson-restrictions.png
+## Restrictions
+
+### Cropping
+ Alvium CSI-2 cameras with firmware version 0.1.0 don't support cropping of the width.
+ 
+ ### Image widths not supported by NVIDIA
+NVIDIA's video input has restrictions concerning the image width depending on the pixel format. If the camera sends an image width not divisible by 16, 32, or 64 (according to the current pixel format), there is a padding at the end of each line. Some tools such as qv4l2 don't support padding bytes, so that these images are displayed incorrectly.
+
+**Workaround:** 
+Enable cropping (see BasicV4L2 in the examples repository) and use a supported value.
 
 ### Supported number of lanes
 Currently, the driver supports using 4 lanes.
