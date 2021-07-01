@@ -8,6 +8,23 @@ Installation instructions
 Installation instructions are provided in the README of the driver repository:   
 https://github.com/alliedvision/linux_nvidia_jetson
 
+Changes
+=======
+
+Changes in driver version 2.0.0
+-------------------------------
+Exposure active signals
+^^^^^^^^^^^^^^^^^^^^^^^^
+The Jetson driver now supports exposure active signals. Note that the camera requires firmware version 00.04.00.34658 or higher. For information about 
+exposure active, see the Alvium MIPI CSI-2 Cameras Direct Register Access Controls Reference:   
+https://www.alliedvision.com/en/support/technical-documentation/alvium-csi-2-documentation.html   
+
+Note especially that exposure active output line mode must be set to Off before output lines can be changed.   
+
+Min/max values for exposure and gain
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Min/max values for exposure auto and auto gain are available. Note that the values are limited to 32 bits.
+
 Support of two cameras
 =======================
 
@@ -48,11 +65,6 @@ Rebooting Jetson TX2 resets these features.
 -  disable_frame_timeout 
 -  disable_stride_aligment 
 -  low_latency_mode
-
-Exposure Active signals
-^^^^^^^^^^^^^^^^^^^^^^^^
-As of camera firmware version  00.04.00.34658, Exposure Active signals are supported.
-The Jetson driver will support Exposure Active signals as of version 2.0.
 
 Supported pixel formats
 =======================
