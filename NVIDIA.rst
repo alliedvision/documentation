@@ -10,6 +10,16 @@ https://github.com/alliedvision/linux_nvidia_jetson
 
 Changes
 =======
+**For supported boards and JetPack versions, see the README of each driver release.**
+
+Changes in driver version 4.0.0
+-------------------------------
+As of this version, the driver can be used with Allied Vision's Vimba SDK v6.1.
+
+Changes in driver version 3.0.0
+-------------------------------
+As of this version, the driver can be used with Allied Vision's Vimba SDK v6.0:
+https://www.alliedvision.com/en/products/vimba-sdk/
 
 Changes in driver version 2.0.0
 -------------------------------
@@ -65,6 +75,17 @@ Rebooting Jetson TX2 resets these features.
 -  disable_frame_timeout 
 -  disable_stride_aligment 
 -  low_latency_mode
+
+TX2 NX V4L2 compliance tests
+----------------------------
+On TX2 NX, some V4L2 compliance tests fail because of additional functionalities, but camera usage is not affected. 
+
+Tests that fail:
+
+-  VIDIOC_QUERY_EXT_CTRL/QUERYMENU
+-  VIDIOC_ENUM_FMT/FRAMESIZES/FRAMEINTERVALS
+-  test VIDIOC G/S_PARM
+-  test VIDIOC_G_FMT
 
 Supported pixel formats
 =======================
