@@ -12,6 +12,12 @@ Changes
 =======
 **For supported boards and JetPack versions, see the README of each driver release.**
 
+Changes in driver version 35.2.1-5.1.0
+--------------------------------------
+As of this version, the driver can be used with Allied Vision's Vimba X SDK: https://www.alliedvision.com/en/products/software/vimba-x-sdk/.
+
+Note for Auvidea carrier JNX30-PD: Please contact Auvidea for a carrier hardware revision with a bug fix for the issue: On one of the 2-lane ports, no camera can be detected (clock and data lanes are mixed up).
+
 Changes in driver version 4.0.0
 -------------------------------
 As of this version, the driver can be used with Allied Vision's Vimba SDK v6.1.
