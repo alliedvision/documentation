@@ -82,16 +82,16 @@ Rebooting Jetson TX2 resets these features.
 -  disable_stride_aligment 
 -  low_latency_mode
 
-TX2 NX V4L2 compliance tests
+V4L2 compliance tests
 ----------------------------
-On TX2 NX, some V4L2 compliance tests fail because of additional functionalities, but camera usage is not affected. 
+Some V4L2 compliance tests fail because of additional functionalities, but camera usage is not affected. 
 
 Tests that fail:
 
--  VIDIOC_QUERY_EXT_CTRL/QUERYMENU
--  VIDIOC_ENUM_FMT/FRAMESIZES/FRAMEINTERVALS
+-  test VIDIOC_QUERY_EXT_CTRL/QUERYMENU
 -  test VIDIOC G/S_PARM
--  test VIDIOC_G_FMT
+-  test Cropping
+-  test Composing
 
 Supported pixel formats
 =======================
